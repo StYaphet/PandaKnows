@@ -280,7 +280,7 @@ NSString *helloworld = @"hello, " "world!";
 你可以使用这个特性来拼接宏的参数：
 
 ```text
-#define COM_URL(domain) [NSURL URLWithString: @"<http://www>." domain ".com"];
+#define COM_URL(domain) [NSURL URLWithString: @"<http://www." domain ".com>"];
 
 COM_URL("google"); // <http://www.google.com>
 COM_URL("apple"); // <http://www.apple.com>
